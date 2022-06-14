@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Carteles from "../components/Carteles";
+import '../styles/components/pages/InicioPage.css';
 
 const InicioPage = (props) => {
   return (
@@ -11,7 +12,7 @@ const InicioPage = (props) => {
           Telescopios!
         </h3>
       </div>
-      <div className="headline load-hidden">
+      <div >
         <a href="productos/f4080.html">
           <div className="cartel">
             <Carteles numProducto="1" />
@@ -21,7 +22,7 @@ const InicioPage = (props) => {
       <div className="texto">
         <h3>15% OFF Contado Efectivo en Fundas & Accesorios</h3>
       </div>
-      <div className="headline load-hidden">
+      <div >
         <a href="productos/f4080.html">
           <div className="cartel">
             <Carteles numProducto="2" />
@@ -35,7 +36,7 @@ const InicioPage = (props) => {
         <img src="img/tarjeta3.jpg" alt="tarjeta" />
         <img src="img/tarjeta4.jpg" alt="tarjeta" />
       </div>
-      <div className="headline load-hidden">
+      <div >
         <a href="productos/f4080.html">
           <div className="cartel">
             <Carteles numProducto="3" />

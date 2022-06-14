@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
+import '../src/styles/components/layout/normalize.css';
 
 import Header from './components/layout/Header';
 import Nav from './components/layout/Nav';
@@ -18,7 +19,7 @@ import ContactoPage from './pages/ContactoPage';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Marquee />
       <Header />
 

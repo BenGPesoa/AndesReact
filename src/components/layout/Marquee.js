@@ -1,4 +1,5 @@
 import React from "react";
+import '../../styles/components/layout/marquee.css';
 const Marquee = (props) => {
   return (
     <div className="ofertas">
