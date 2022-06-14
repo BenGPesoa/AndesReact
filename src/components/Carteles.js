@@ -1,11 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Carteles = (props) => {
   const srcProducto = `img/productos/cartel${props.numProducto}a.jpg`;
   const srcInfo = `img/productos/cartel${props.numProducto}.jpg`;
   return (
-    <picture>
+    <picture className="inCartel">
       <img src={srcInfo} />
       <img src={srcProducto} />
     </picture>

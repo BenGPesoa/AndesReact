@@ -1,0 +1,33 @@
+.pics {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;  
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center; 
+}
+
+.pics p {
+    font-size: 18px;
+}
+
+.galeria {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
+}
+
+.pics img {
+    max-width: 300px;
+    margin-bottom: 1rem;
+}
+
+.galeriaCh {
+    border: solid 2px black;
+    width: 40%;
+}

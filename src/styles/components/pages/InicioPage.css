@@ -1,59 +1,27 @@
 .cartel {
     width: 70%;
-    margin: 1rem auto;
+    margin: 2rem auto;
     padding: 0.2rem;
     border: solid 5px black;
     border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
     transition: all 0.3s ease;
 }
 
 .cartel img {
     max-width: 40%;
+    border-radius: 10px;
 }
 
-.texto {
-    width: 70%;
-    margin: 4rem auto;
-    text-align: center;
-
+.inCartel {
+    display: flex;
+    justify-content: space-between;
 }
 
-.texto h3 {
-    font-family: 'Cinzel Decorative', cursive;
-    font-size: 2rem;
-    margin: 2rem;
-    border-bottom: solid 1px black;
-}
-
-.texto img {
-    max-width: 80px;
-    border-radius: 5px;
-}
 
 .cartel:hover {
     transform: scale(1.02);
     box-shadow: 0px 10px 13px -7px #000000;
 }
 
-.cartel2 {
-    width: 40%;
-    margin: 1rem auto;
-    padding: 0.2rem;
-    border: solid 5px black;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
 
-.cartel2 img {
-    max-width: 90%;
-}
-
-.cartel2:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 10px 13px -7px #000000;
-}
 

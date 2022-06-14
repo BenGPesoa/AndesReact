@@ -20,7 +20,7 @@ const InicioPage = (props) => {
         </a>
       </div>
       <div className="texto">
-        <h3>15% OFF Contado Efectivo en Fundas & Accesorios</h3>
+        <h3>15% OFF Contado Efectivo en Fundas &amp; Accesorios</h3>
       </div>
       <div >
         <a href="productos/f4080.html">
