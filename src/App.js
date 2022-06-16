@@ -2,11 +2,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import '../src/styles/components/layout/normalize.css';
 
-import Header from './components/layout/Header';
-import Nav from './components/layout/Nav';
-import Footer from './components/layout/Footer';
-import Banner from './components/layout/Banner';
-import Marquee from './components/layout/Marquee';
 
 import HomePage from './pages/HomePage';
 import InicioPage from './pages/InicioPage';
@@ -16,30 +11,23 @@ import GaleriaPage from './pages/GaleriaPage';
 import EfemeridesPage from './pages/EfemeridesPage';
 import ContactoPage from './pages/ContactoPage';
 
+import Layout from './components/Layout.js';
+
 
 function App() {
   return (
-    <div>
-      <Marquee />
-      <Header />
-
-      <BrowserRouter>
-        <Nav />
-        <Banner />
+      <BrowserRouter>        
           <Routes>
-            <Route path='/' element={<InicioPage/>} />
-            <Route path='productos' element={<ProductosPage/>} />
-            <Route path='fabrica' element={<FabricaPage/>} />
-            <Route path='efemerides' element={<EfemeridesPage/>} />
-            <Route path='galeria' element={<GaleriaPage/>} />
-            <Route path='contacto' element={<ContactoPage/>} />
+            <Route path='/' element={<HomePage/>} />
+            <Route path='/inicio' element={<Layout><InicioPage/></Layout>} />
+            <Route path='/productos' element={<Layout><ProductosPage/></Layout>} />
+            <Route path='/fabrica' element={<Layout><FabricaPage/></Layout>} />
+            <Route path='/efemerides' element={<Layout><EfemeridesPage/></Layout>} />
+            <Route path='/galeria' element={<Layout><GaleriaPage/></Layout>} />
+            <Route path='/contacto' element={<Layout><ContactoPage/></Layout>} />
           </Routes>
       </BrowserRouter>
-      
-     
-      <Footer />
-    </div>
   );
-}
+};
 
 export default App;
