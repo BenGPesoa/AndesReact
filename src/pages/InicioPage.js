@@ -1,17 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Fade from 'react-reveal/Fade';
 import Carteles from "../components/Carteles";
 import '../styles/components/pages/InicioPage.css';
 
 const InicioPage = (props) => {
   return (
-    <div>
+    <div className="inicio">
       <div className="texto">
         <h3>
           Del 9 al 28 de Mayo Oferta especial Eclipse Lunar 10% OFF en
           Telescopios!
         </h3>
       </div>
+      <Fade left>
       <div >
         <a href="productos/f4080.html">
           <div className="cartel">
@@ -19,9 +20,11 @@ const InicioPage = (props) => {
           </div>
         </a>
       </div>
+      </Fade>
       <div className="texto">
         <h3>15% OFF Contado Efectivo en Fundas &amp; Accesorios</h3>
       </div>
+      <Fade right>
       <div >
         <a href="productos/f4080.html">
           <div className="cartel">
@@ -29,6 +32,7 @@ const InicioPage = (props) => {
           </div>
         </a>
       </div>
+      </Fade>
       <div className="texto">
         <h3>12 Cuotas sin Interés</h3>
         <img src="img/tarjeta1.jpg" alt="tarjeta" />
@@ -36,6 +40,7 @@ const InicioPage = (props) => {
         <img src="img/tarjeta3.jpg" alt="tarjeta" />
         <img src="img/tarjeta4.jpg" alt="tarjeta" />
       </div>
+      <Fade left>
       <div >
         <a href="productos/f4080.html">
           <div className="cartel">
@@ -43,6 +48,7 @@ const InicioPage = (props) => {
           </div>
         </a>
       </div>
+      </Fade>
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React from "react";
+import Iframe from 'react-iframe'
 import "../styles/components/pages/EfemeridesPage.css";
 
 const EfemeridesPage = (props) => {
@@ -110,11 +111,12 @@ const EfemeridesPage = (props) => {
         <img src="img/novedades/26junio.png" alt="26junio" />
       </div>
 
-      {/* <div className="fasesLuna">
+      <div className="fasesLuna">
         <h3>Estas son las fases de la luna de este mes</h3>
-        <iframe src="https://www.tutiempo.net/s-widget/moon/000000l1s/" scrolling="no" frameborder="0"
-            style="border:none; overflow:hidden; width:600px; height:737px;"></iframe>
-    </div> */}
+        <Iframe src="https://www.tutiempo.net/s-widget/moon/000000l1s/" scrolling="no" frameborder="0"
+        className="fasesIframe"
+            style="border:none; overflow:hidden; "></Iframe>
+    </div>
     </div>
   );
 };

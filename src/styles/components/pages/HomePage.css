@@ -1,10 +1,12 @@
-.fondoIndex {
+body {
     overflow: hidden;
 }
 
-.fondo {
-    overflow: hidden;
+.fondoIndex {
+    width: 100%;
 }
+
+
 
 .fondo img {
     position: absolute;
@@ -54,17 +56,19 @@
     font-family: 'Cinzel Decorative', cursive;
     font-size: 80px;
     letter-spacing: 5px;
+    text-decoration: none;
+    border: none;
 }
 
 .overText h2 {
     position: fixed;
-    top: 30%;
+    top: 35%;
     left: 25%;
     z-index: 3;
     color: rgb(245, 245, 255);
     font-family: 'Cinzel Decorative', cursive;
     font-size: 50px;
-    
+    border-top: solid 1px #fff;
 }
 
 
